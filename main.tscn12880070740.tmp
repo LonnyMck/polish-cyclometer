@@ -1,0 +1,172 @@
+[gd_scene load_steps=6 format=3 uid="uid://db47lvobd628c"]
+
+[ext_resource type="Theme" uid="uid://cuadirn43hgpq" path="res://cyclokeyletter.tres" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://ckd6kj4bds6ee" path="res://letter_outputs.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://b07whshfbdcb" path="res://input_one.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://v5018csnvdhd" path="res://keyletter.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bfbenyf0mu3hi" path="res://art/cyclobg.png" id="5_lquwl"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -352.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1bvp3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.005
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 0.23999
+offset_bottom = 5.0
+texture = ExtResource("5_lquwl")
+stretch_mode = 3
+
+[node name="LetterOutputs" type="HFlowContainer" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 338.0
+offset_top = 311.0
+offset_right = 743.0
+offset_bottom = 613.0
+focus_mode = 1
+theme = ExtResource("1_1bvp3")
+alignment = 1
+script = ExtResource("1_h2yge")
+
+[node name="A" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "A"
+
+[node name="B" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+label_text = "B"
+
+[node name="C" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+label_text = "C"
+
+[node name="D" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "D"
+
+[node name="E" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "E"
+
+[node name="F" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "F"
+
+[node name="G" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "G"
+
+[node name="H" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "H"
+
+[node name="I" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "I"
+
+[node name="J" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "J"
+
+[node name="K" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "K"
+
+[node name="L" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "L"
+
+[node name="M" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "M"
+
+[node name="N" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+label_text = "N"
+
+[node name="O" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+label_text = "O"
+
+[node name="P" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "P"
+
+[node name="Q" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Q"
+
+[node name="R" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "R"
+
+[node name="S" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "S"
+
+[node name="T" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "T"
+
+[node name="U" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "U"
+
+[node name="V" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "V"
+
+[node name="W" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "W"
+
+[node name="X" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "X"
+
+[node name="Y" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Y"
+
+[node name="Z" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Z"
+
+[node name="InputOne" type="LineEdit" parent="."]
+z_index = 5
+layout_mode = 1
+offset_left = 115.0
+offset_top = 102.0
+offset_right = 698.0
+offset_bottom = 231.0
+theme = ExtResource("1_1bvp3")
+theme_override_font_sizes/font_size = 110
+placeholder_text = "AAAAAA"
+alignment = 3
+max_length = 6
+emoji_menu_enabled = false
+select_all_on_focus = true
+text_direction = 1
+script = ExtResource("2_0xm2m")
+
+[connection signal="inputted_code" from="InputOne" to="LetterOutputs" method="_on_input_one_inputted_code"]
+[connection signal="inputted_code" from="InputOne" to="LetterOutputs/A" method="_on_input_one_inputted_code"]
+[connection signal="text_changed" from="InputOne" to="InputOne" method="_on_text_changed"]

@@ -1,0 +1,153 @@
+[gd_scene load_steps=4 format=3 uid="uid://db47lvobd628c"]
+
+[ext_resource type="Script" uid="uid://ckd6kj4bds6ee" path="res://letter_outputs.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://b07whshfbdcb" path="res://input_one.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://v5018csnvdhd" path="res://keyletter.tscn" id="2_h2yge"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LetterOutputs" type="HFlowContainer" parent="."]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 260.0
+offset_right = 1049.0
+offset_bottom = 644.0
+script = ExtResource("1_h2yge")
+
+[node name="A" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "A"
+
+[node name="B" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+label_text = "B"
+
+[node name="C" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+label_text = "C"
+
+[node name="D" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "D"
+
+[node name="E" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "E"
+
+[node name="F" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "F"
+
+[node name="G" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "G"
+
+[node name="H" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "H"
+
+[node name="I" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "I"
+
+[node name="J" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "J"
+
+[node name="K" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "K"
+
+[node name="L" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "L"
+
+[node name="M" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "M"
+
+[node name="N" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+label_text = "N"
+
+[node name="O" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+label_text = "O"
+
+[node name="P" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "P"
+
+[node name="Q" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Q"
+
+[node name="R" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "R"
+
+[node name="S" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "S"
+
+[node name="T" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "T"
+
+[node name="U" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "U"
+
+[node name="V" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "V"
+
+[node name="W" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "W"
+
+[node name="X" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "X"
+
+[node name="Y" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Y"
+
+[node name="Z" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "Z"
+
+[node name="InputOne" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 82.0
+offset_right = 396.0
+offset_bottom = 169.0
+placeholder_text = "AAA"
+alignment = 3
+max_length = 3
+script = ExtResource("2_0xm2m")
+
+[node name="InputTwo" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 87.0
+offset_right = 817.0
+offset_bottom = 172.0
+placeholder_text = "AAC"
+max_length = 3
+
+[connection signal="inputted_code" from="InputOne" to="LetterOutputs" method="_on_input_one_inputted_code"]
+[connection signal="inputted_code" from="InputOne" to="LetterOutputs/A" method="_on_input_one_inputted_code"]
+[connection signal="text_changed" from="InputOne" to="InputOne" method="_on_text_changed"]

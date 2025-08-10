@@ -1,0 +1,72 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://cuadirn43hgpq"]
+
+[ext_resource type="FontFile" uid="uid://c2vft6cof60dp" path="res://fonts/bitstream_vera_mono/VeraMono.ttf" id="1_07tp8"]
+[ext_resource type="StyleBox" uid="uid://bqrt1pd72d0ju" path="res://LineEdit.tres" id="3_gx84n"]
+[ext_resource type="StyleBox" uid="uid://cwcwikwxoqtwm" path="res://LineEditReadOnly.tres" id="3_uhg3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gx84n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kacbj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_76d3p"]
+
+[sub_resource type="FontFile" id="FontFile_iy4xc"]
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
+[resource]
+default_font = SubResource("FontFile_iy4xc")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0.11241, 0.411676, 0.433425, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 16
+Button/styles/disabled = SubResource("StyleBoxEmpty_gx84n")
+Button/styles/hover = SubResource("StyleBoxEmpty_kacbj")
+Button/styles/normal = SubResource("StyleBoxEmpty_76d3p")
+CheckBox/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 40
+Label/fonts/font = ExtResource("1_07tp8")
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_outline_color = Color(0.875456, 0.875457, 0.875456, 1)
+LineEdit/colors/font_placeholder_color = Color(0, 0, 0, 0.411765)
+LineEdit/colors/font_selected_color = Color(0.680094, 0.32497, 0.201993, 1)
+LineEdit/colors/font_uneditable_color = Color(0.875, 0.875, 0.875, 0.5)
+LineEdit/colors/selection_color = Color(0.171319, 0.434761, 0.485265, 1)
+LineEdit/constants/caret_width = 3
+LineEdit/constants/minimum_character_width = 3
+LineEdit/constants/outline_size = 0
+LineEdit/font_sizes/font_size = 40
+LineEdit/fonts/font = ExtResource("1_07tp8")
+LineEdit/styles/focus = ExtResource("3_gx84n")
+LineEdit/styles/normal = ExtResource("3_gx84n")
+LineEdit/styles/read_only = ExtResource("3_uhg3t")
+VFlowContainer/constants/h_separation = 10
+VFlowContainer/constants/v_separation = 7

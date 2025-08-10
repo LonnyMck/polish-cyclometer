@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://v5018csnvdhd"]
+
+[ext_resource type="Theme" uid="uid://cjnfpk6bxc0ya" path="res://MainTheme.tres" id="1_28p7c"]
+[ext_resource type="Script" uid="uid://b3qa1mt02a8ny" path="res://keyletter.gd" id="1_kvgs2"]
+[ext_resource type="ButtonGroup" uid="uid://cfjlnge1glu0u" path="res://LetterSwitches.tres" id="2_qynaa"]
+[ext_resource type="Texture2D" uid="uid://cggiaueutokyg" path="res://art/leds/switch_off.png" id="3_qynaa"]
+[ext_resource type="Texture2D" uid="uid://dhbtb2fnrgy41" path="res://art/leds/led_off.png" id="4_qynaa"]
+[ext_resource type="Texture2D" uid="uid://ksu1h64gm3in" path="res://art/leds/switch_on.png" id="4_yjplp"]
+[ext_resource type="Texture2D" uid="uid://dyfs2wp3r7nqn" path="res://art/leds/switch_disabled.png" id="5_28p7c"]
+[ext_resource type="Texture2D" uid="uid://dl0t2csojpd0m" path="res://art/leds/led_on.png" id="5_yjplp"]
+[ext_resource type="Texture2D" uid="uid://d0jk6dpore3qf" path="res://art/leds/led_dis.png" id="8_28p7c"]
+
+[node name="keyletter" type="TextureButton"]
+z_index = 1
+custom_minimum_size = Vector2(40, 90)
+anchors_preset = -1
+anchor_left = 0.001
+anchor_top = 0.004
+anchor_right = 0.086
+anchor_bottom = 0.164
+offset_left = -0.8
+offset_top = -3.2
+offset_right = 0.199997
+offset_bottom = 0.800003
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_28p7c")
+disabled = true
+toggle_mode = true
+button_group = ExtResource("2_qynaa")
+texture_normal = ExtResource("3_qynaa")
+texture_pressed = ExtResource("4_yjplp")
+texture_disabled = ExtResource("5_28p7c")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_kvgs2")
+
+[node name="LedSwitch" type="TextureButton" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+disabled = true
+toggle_mode = true
+button_mask = 0
+texture_normal = ExtResource("4_qynaa")
+texture_pressed = ExtResource("5_yjplp")
+texture_disabled = ExtResource("8_28p7c")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="LetterLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 76.0
+offset_right = 1.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="property_list_changed" from="." to="." method="_on_property_list_changed"]
+[connection signal="toggled" from="." to="." method="_on_toggled"]

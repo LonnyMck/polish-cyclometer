@@ -1,0 +1,326 @@
+[gd_scene load_steps=9 format=3 uid="uid://db47lvobd628c"]
+
+[ext_resource type="Theme" uid="uid://cjnfpk6bxc0ya" path="res://MainTheme.tres" id="1_5vw27"]
+[ext_resource type="Script" uid="uid://ckd6kj4bds6ee" path="res://letter_outputs.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://b07whshfbdcb" path="res://letters_123.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://cnwgri7fry8ou" path="res://main.gd" id="2_272bh"]
+[ext_resource type="PackedScene" uid="uid://v5018csnvdhd" path="res://keyletter.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dso7eoe6lmit6" path="res://art/polishcyclocrank.png" id="3_272bh"]
+[ext_resource type="Script" uid="uid://cc2c4ygq8didn" path="res://letters_456.gd" id="6_7mycd"]
+
+[sub_resource type="Theme" id="Theme_272bh"]
+resource_name = "MainTheme"
+
+[node name="Main" type="Control"]
+clip_contents = true
+custom_minimum_size = Vector2(800, 800)
+layout_mode = 3
+anchor_top = 0.004
+anchor_right = 1.006
+anchor_bottom = 0.968
+offset_top = 4.4
+offset_right = 2.19995
+offset_bottom = 177.8
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5vw27")
+script = ExtResource("2_272bh")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.769
+offset_top = 247.0
+offset_bottom = -0.200073
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LampCrank" type="Control" parent="."]
+anchors_preset = 0
+offset_top = 397.0
+offset_right = 345.0
+offset_bottom = 611.0
+
+[node name="TextureRect" type="TextureRect" parent="LampCrank"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.112
+anchor_right = 0.742
+anchor_bottom = 0.951
+offset_left = 23.0
+offset_top = -7.968
+offset_right = 5.00998
+offset_bottom = -19.514
+texture = ExtResource("3_272bh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="LetterOutputs" type="HFlowContainer" parent="."]
+z_index = 5
+layout_mode = 1
+offset_left = 279.0
+offset_top = 282.0
+offset_right = 767.0
+offset_bottom = 589.0
+focus_mode = 1
+alignment = 1
+script = ExtResource("1_h2yge")
+
+[node name="A" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+label_text = "A"
+
+[node name="B" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+
+[node name="C" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+
+[node name="D" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="E" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="F" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="G" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="H" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="I" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="J" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="K" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="L" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="M" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="N" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "B"
+
+[node name="O" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+tooltip_text = "C"
+
+[node name="P" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="Q" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="R" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="S" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="T" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="U" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="V" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="W" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="X" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="Y" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="Z" parent="LetterOutputs" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.305
+offset_right = 3.0
+grow_horizontal = 2
+current_tab = 0
+
+[node name="Message Key" type="Panel" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Letters123" type="LineEdit" parent="TabContainer/Message Key"]
+unique_name_in_owner = true
+z_index = 5
+layout_mode = 1
+offset_left = 129.0
+offset_top = 35.0
+offset_right = 331.0
+offset_bottom = 145.0
+size_flags_horizontal = 6
+size_flags_vertical = 4
+placeholder_text = "AAA"
+max_length = 3
+emoji_menu_enabled = false
+select_all_on_focus = true
+text_direction = 1
+script = ExtResource("2_0xm2m")
+
+[node name="Letters456" type="LineEdit" parent="TabContainer/Message Key"]
+unique_name_in_owner = true
+z_index = 5
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 22.5
+offset_top = -66.5
+offset_right = 233.5
+offset_bottom = 47.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+placeholder_text = "AAD"
+max_length = 3
+emoji_menu_enabled = false
+select_all_on_focus = true
+text_direction = 1
+script = ExtResource("6_7mycd")
+
+[node name="AutomateCheckBox" type="CheckButton" parent="TabContainer/Message Key"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(12.335, 0)
+layout_mode = 2
+offset_left = 410.0
+offset_top = 158.0
+offset_right = 651.0
+offset_bottom = 192.0
+size_flags_horizontal = 0
+text = "Automate Last 3 Letters?"
+
+[node name="Rotor Options" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Rotor Options" type="HBoxContainer" parent="TabContainer/Rotor Options"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_272bh")
+alignment = 1
+
+[node name="SlowRotor" type="VBoxContainer" parent="TabContainer/Rotor Options/Rotor Options"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Rotor Options/Rotor Options/SlowRotor"]
+layout_mode = 2
+text = "Slow Rotor"
+
+[node name="OptRotorSlow" type="OptionButton" parent="TabContainer/Rotor Options/Rotor Options/SlowRotor"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Rotor 1"
+popup/item_0/id = 0
+popup/item_1/text = "Rotor 2"
+popup/item_1/id = 1
+popup/item_2/text = "Rotor 3"
+popup/item_2/id = 2
+
+[node name="MiddleRotor" type="VBoxContainer" parent="TabContainer/Rotor Options/Rotor Options"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Rotor Options/Rotor Options/MiddleRotor"]
+layout_mode = 2
+text = "Middle Rotor"
+
+[node name="OptRotorMid" type="OptionButton" parent="TabContainer/Rotor Options/Rotor Options/MiddleRotor"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 1
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Rotor 1"
+popup/item_0/id = 0
+popup/item_1/text = "Rotor 2"
+popup/item_1/id = 1
+popup/item_2/text = "Rotor 3"
+popup/item_2/id = 2
+
+[node name="FastRotor" type="VBoxContainer" parent="TabContainer/Rotor Options/Rotor Options"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Rotor Options/Rotor Options/FastRotor"]
+layout_mode = 2
+text = "Fast Rotor"
+
+[node name="OptRotorFast" type="OptionButton" parent="TabContainer/Rotor Options/Rotor Options/FastRotor"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 2
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Rotor 1"
+popup/item_0/id = 0
+popup/item_1/text = "Rotor 2"
+popup/item_1/id = 1
+popup/item_2/text = "Rotor 3"
+popup/item_2/id = 2
+
+[node name="Reflector" type="VBoxContainer" parent="TabContainer/Rotor Options/Rotor Options"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Rotor Options/Rotor Options/Reflector"]
+layout_mode = 2
+text = "Reflector"
+
+[node name="OptReflector" type="OptionButton" parent="TabContainer/Rotor Options/Rotor Options/Reflector"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "Reflector A"
+popup/item_0/id = 0
+popup/item_1/text = "Reflector B"
+popup/item_1/id = 1
+
+[connection signal="text_changed" from="TabContainer/Message Key/Letters123" to="." method="_on_letters_123_text_changed"]
+[connection signal="text_changed" from="TabContainer/Message Key/Letters123" to="TabContainer/Message Key/Letters123" method="_on_text_changed"]
+[connection signal="text_changed" from="TabContainer/Message Key/Letters456" to="." method="_on_letters_456_text_changed"]
+[connection signal="text_changed" from="TabContainer/Message Key/Letters456" to="TabContainer/Message Key/Letters456" method="_on_text_changed"]
+[connection signal="toggled" from="TabContainer/Message Key/AutomateCheckBox" to="." method="_on_check_button_toggled"]
+[connection signal="item_selected" from="TabContainer/Rotor Options/Rotor Options/SlowRotor/OptRotorSlow" to="." method="_on_opt_rotor_slow_item_selected"]
+[connection signal="item_selected" from="TabContainer/Rotor Options/Rotor Options/MiddleRotor/OptRotorMid" to="." method="_on_opt_rotor_mid_item_selected"]
+[connection signal="item_selected" from="TabContainer/Rotor Options/Rotor Options/FastRotor/OptRotorFast" to="." method="_on_opt_rotor_fast_item_selected"]
+[connection signal="item_selected" from="TabContainer/Rotor Options/Rotor Options/Reflector/OptReflector" to="." method="_on_opt_reflector_item_selected"]

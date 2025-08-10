@@ -1,0 +1,9 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://bqrt1pd72d0ju"]
+
+[resource]
+resource_name = "LineEdit"
+bg_color = Color(0.592157, 0.603922, 0.580392, 0)
+draw_center = false
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+anti_aliasing = false

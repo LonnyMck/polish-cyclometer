@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://db47lvobd628c"]
+
+[ext_resource type="Script" uid="uid://ckd6kj4bds6ee" path="res://letter_outputs.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://b07whshfbdcb" path="res://input_one.gd" id="2_0xm2m"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LetterOutputs" type="HFlowContainer" parent="."]
+layout_mode = 0
+offset_top = 260.0
+offset_right = 1168.0
+offset_bottom = 644.0
+script = ExtResource("1_h2yge")
+
+[node name="InputOne" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 51.0
+offset_right = 342.0
+offset_bottom = 138.0
+placeholder_text = "AAA"
+alignment = 3
+max_length = 3
+script = ExtResource("2_0xm2m")
+
+[node name="InputTwo" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 51.0
+offset_right = 121.563
+offset_bottom = 82.0
+
+[connection signal="text_changed" from="InputOne" to="InputOne" method="_on_text_changed"]
