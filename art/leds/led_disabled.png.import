@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0jk6dpore3qf"
-path="res://.godot/imported/led_dis.png-30c098f9e64716713cee69048af5829a.ctex"
+uid="uid://cium8gl6cdspt"
+path="res://.godot/imported/led_disabled.png-2a98a336d70d840822921e93ba352de4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/leds/led_dis.png"
-dest_files=["res://.godot/imported/led_dis.png-30c098f9e64716713cee69048af5829a.ctex"]
+source_file="res://art/leds/led_disabled.png"
+dest_files=["res://.godot/imported/led_disabled.png-2a98a336d70d840822921e93ba352de4.ctex"]
 
 [params]
 

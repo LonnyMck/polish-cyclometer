@@ -34,4 +34,8 @@ func _on_toggled(toggled_on: bool) -> void:
 func _on_property_list_changed() -> void:
 	#if (led_on || switch_on): print( label + str(led_on) + str(switch_on))
 	$LedSwitch.disabled = $".".disabled
+	var letter_color = Color(1,1,1,1) if $".".disabled else Color(0.3,0.3,0.3,1)
+	
+	set("theme_override_colors/font_color", letter_color)
+
 	LedisOn(led_on)
